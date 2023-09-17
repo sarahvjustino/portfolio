@@ -14,18 +14,22 @@
   </head>
   <body>
     <header>
-      <div class="logo">Portfólio</div>
+      <div class="logo"><span>Portfólio</span></div>
 
       <div class="header-menu">
         <nav>
           <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Sobre Mim</a></li>
-            <li><a href="">Habilidades</a></li>
-            <li><a href="">Projetos</a></li>
-            <li><a href="">Contato</a></li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Sobre Mim</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
           </ul>
         </nav>
+
+        <a href="./assets/Curriculo.pdf" target="_blank">
+          <button class="btn-cv">Baixar CV</button>
+        </a>
       </div>
 
       <div class="menu-opener">
@@ -42,7 +46,7 @@
           <li><a href="#contact">Contato</a></li>
         </ul>
       </nav>
-      <a href="">
+      <a href="./assets/Curriculo.pdf" target="_blank">
         <button class="btn-cv">Baixar CV</button>
       </a>
     </div>
@@ -60,9 +64,17 @@
           <a href="#contact"><button class="btn-contact">Contate-me</button></a>
 
           <div class="socials">
-            <a href=""><img src="./assets/linkedin.svg" alt="" /></a>
-            <a href=""><img src="./assets/github.svg" alt="" /></a>
-            <a href=""><img src="./assets/instagram.svg" alt="" /></a>
+            <a href="https://www.linkedin.com/in/sarahvjustino/" target="_blank"
+              ><img src="./assets/linkedin.svg" alt=""
+            /></a>
+            <a href="https://github.com/sarahvjustino" target="_blank"
+              ><img src="./assets/github.svg" alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/sarahvictoria230/"
+              target="_blank"
+              ><img src="./assets/instagram.svg" alt=""
+            /></a>
           </div>
         </div>
       </section>
@@ -70,14 +82,15 @@
       <section id="about">
         <div class="about-container">
           <h2 class="title">Sobre Mim</h2>
-          <img src="./assets/Foto_perfil-mobile.png" alt="" />
-
-          <p>
-            Olá, sou Sarah, desde criança, sou fascinada por programação,
-            atualmente cursando Análise e Desenvolvimento de Sistemas. Estou em
-            busca da minha primeira oportunidade nessa área, ansiosa para
-            contribuir com minha paixão e dedicação à tecnologia.
-          </p>
+          <div class="about-content">
+            <img src="./assets/Foto_perfil-mobile.png" alt="" />
+            <p>
+              Olá, sou Sarah, desde criança, sou fascinada por programação,
+              atualmente cursando Análise e Desenvolvimento de Sistemas. Estou
+              em busca da minha primeira oportunidade nessa área, ansiosa para
+              contribuir com minha paixão e dedicação à tecnologia.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -141,106 +154,134 @@
                     <img src="./assets/css.svg" />
                     <img src="./assets/js.svg" />
                     <img src="./assets/react.svg" />
+                    <img src="./assets/node.svg" />
                   </div>
                 </div>
                 <div class="project-desc">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error, nemo accusantium obcaecati sed non nobis impedit
-                    necessitatibus aut fuga quos magnam provident qui, tenetur
-                    cupiditate.
+                    Esta é uma aplicação fullstack que permite salvar e
+                    gerenciar links úteis de forma rápida. Criei uma API com
+                    Node.js, Express e SQLite para o backend, enquanto o
+                    frontend foi desenvolvido em ReactJS com Styled Components.
                   </p>
                 </div>
                 <div class="project-buttons">
-                  <a href=""><img src="./assets/page.svg" /></a>
-                  <a href=""><img src="./assets/github.svg" /></a>
+                  <a href="#" target="_blank"
+                    ><img src="./assets/page.svg"
+                  /></a>
+                  <a
+                    href="https://github.com/sarahvjustino/RocketNotes-Explorer"
+                    target="_blank"
+                    ><img src="./assets/github.svg"
+                  /></a>
                 </div>
               </div>
             </div>
 
             <div class="project">
               <div class="project-image">
-                <img src="./assets/rocketnotes.png" alt="" />
+                <img src="./assets/gitfav.png" alt="" />
               </div>
               <div class="project-info-content">
                 <div class="project-title">
-                  <p>RocketNotes</p>
+                  <p>Gitfav</p>
                   <div class="project-stacks">
                     <img src="./assets/html.svg" />
                     <img src="./assets/css.svg" />
                     <img src="./assets/js.svg" />
-                    <img src="./assets/react.svg" />
                   </div>
                 </div>
                 <div class="project-desc">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error, nemo accusantium obcaecati sed non nobis impedit
-                    necessitatibus aut fuga quos magnam provident qui, tenetur
-                    cupiditate.
+                    O projeto Git Fav é uma aplicação web que permite aos
+                    usuários criar uma lista personalizada de favoritos do
+                    GitHub. Utilizei a API pública do GitHub para buscar
+                    informações relevantes dos usuários, como imagem, nome,
+                    repositórios e seguidores.
                   </p>
                 </div>
                 <div class="project-buttons">
-                  <a href=""><img src="./assets/page.svg" /></a>
-                  <a href=""><img src="./assets/github.svg" /></a>
+                  <a
+                    href="https://sarahvjustino.github.io/GitFav-Explorer/"
+                    target="_blank"
+                    ><img src="./assets/page.svg"
+                  /></a>
+                  <a
+                    href="https://github.com/sarahvjustino/GitFav-Explorer"
+                    target="_blank"
+                    ><img src="./assets/github.svg"
+                  /></a>
                 </div>
               </div>
             </div>
 
             <div class="project">
               <div class="project-image">
-                <img src="./assets/rocketnotes.png" alt="" />
+                <img src="./assets/pomodoro.png" alt="" />
               </div>
               <div class="project-info-content">
                 <div class="project-title">
-                  <p>RocketNotes</p>
+                  <p>Pomodoro Timer</p>
                   <div class="project-stacks">
                     <img src="./assets/html.svg" />
                     <img src="./assets/css.svg" />
                     <img src="./assets/js.svg" />
-                    <img src="./assets/react.svg" />
                   </div>
                 </div>
                 <div class="project-desc">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error, nemo accusantium obcaecati sed non nobis impedit
-                    necessitatibus aut fuga quos magnam provident qui, tenetur
-                    cupiditate.
+                    O Pomodoro Timer é uma aplicação web de gerenciamento de
+                    tempo, desenvolvida com HTML, CSS e JavaScript. Permite aos
+                    usuários personalizar o tempo de foco, ajustar o volume de
+                    áudio e utilizar áudios pré-definidos para melhorar a
+                    produtividade.
                   </p>
                 </div>
                 <div class="project-buttons">
-                  <a href=""><img src="./assets/page.svg" /></a>
-                  <a href=""><img src="./assets/github.svg" /></a>
+                  <a
+                    href="https://sarahvjustino.github.io/Explorer-PomodoroTimer-2.0/"
+                    target="_blank"
+                    ><img src="./assets/page.svg"
+                  /></a>
+                  <a
+                    href="https://github.com/sarahvjustino/Explorer-PomodoroTimer-2.0"
+                    target="_blank"
+                    ><img src="./assets/github.svg"
+                  /></a>
                 </div>
               </div>
             </div>
 
             <div class="project">
               <div class="project-image">
-                <img src="./assets/rocketnotes.png" alt="" />
+                <img src="./assets/rocketmovies.png" alt="" />
               </div>
               <div class="project-info-content">
                 <div class="project-title">
-                  <p>RocketNotes</p>
+                  <p>RocketMovies</p>
                   <div class="project-stacks">
                     <img src="./assets/html.svg" />
                     <img src="./assets/css.svg" />
                     <img src="./assets/js.svg" />
                     <img src="./assets/react.svg" />
+                    <img src="./assets/node.svg" />
                   </div>
                 </div>
                 <div class="project-desc">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Error, nemo accusantium obcaecati sed non nobis impedit
-                    necessitatibus aut fuga quos magnam provident qui, tenetur
-                    cupiditate.
+                    Esta uma aplicação é uma plataforma permite acompanhar
+                    filmes, séries e animes assistidos. Utilizei Vite, ReactJS,
+                    styled components, Node.js, Express e SQLite, com recursos
+                    como autenticação JWT, upload de imagens e API RESTful.
                   </p>
                 </div>
                 <div class="project-buttons">
-                  <a href=""><img src="./assets/page.svg" /></a>
-                  <a href=""><img src="./assets/github.svg" /></a>
+                  <a href="#"><img src="./assets/page.svg" /></a>
+                  <a
+                    href="https://github.com/sarahvjustino/RocketMovies-Explorer"
+                    target="_blank"
+                    ><img src="./assets/github.svg"
+                  /></a>
                 </div>
               </div>
             </div>
@@ -282,5 +323,7 @@
         Copyright© 2023 | Desenvolvido por Sarah Victoria Justino de Castro
       </p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
